@@ -1,0 +1,314 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #F7F7F7;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+.content {
+    padding: 20px 45px;
+    font-family: 'Inter';
+    margin: 0 auto;
+    max-width: 1600px
+}
+
+.users-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.users-head {
+    background-color: #FFFFFF;
+    border: solid 0px;
+    border-radius: 7px;
+    padding: 12px 44px 16px 16px;
+    box-shadow: 0px 18px 15px 0px #94949426;
+    margin-bottom: 72px;
+}
+
+#search-input::placeholder {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+    background-color: #ECEFF0;
+    border: solid 0px;
+    color: #9EAAB4;
+    background-image: url("icon-search.svg");
+    background-repeat: no-repeat;
+    text-indent: 24px;
+    background-position: 1px center;
+    background-size: 24px;
+}
+
+.users-search {
+    background-color: #ECEFF0;
+    border: solid 0px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input {
+    border: solid 0px;
+    background-color: #ECEFF0;
+    padding: 9px 0px 9px 8px;
+    border-radius: 4px;
+    width: inherit;
+    font-size: 13px;
+}
+
+.users-table {
+    width: 100%;
+    background-color: #FFFFFF;
+    border: solid 0px;
+    border-radius: 7px;
+}
+
+td {
+    padding: 16px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ACACAC;
+}
+
+td:first-child {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0CB4F1;
+}
+
+#sortButtons {
+    margin-bottom: 15px;
+    display: inline-flex;
+}
+
+th {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9EAAB4;
+    padding: 16px 16px;
+}
+
+#table-body {
+    padding: 0px 16px 0px 16px;
+}
+
+.users-pag {
+    width: fit-content;
+    margin: 15px auto;
+}
+
+td:last-child {
+    padding-top: 16px;
+}
+
+tr {
+    border-bottom: solid 1px #F7F7F7;
+}
+
+.sort-it {
+    margin-left: 8px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.choose-sort {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9EAAB4;
+}
+
+.sort-before:hover {
+    color: #9EAAB4;
+}
+
+.but-pag {
+    background: none;
+    border: solid 0px;
+    color: #0CB4F1;
+}
+
+button {
+    background: none;
+    border: solid 0px;
+    color: #0CB4F1;
+}
+
+button:hover {
+    color: #ACACAC;
+}
+
+.clean-sort {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4F4F4F;
+    margin: auto;
+}
+
+.clean-wrap {
+    display: inline-flex;
+    margin-top: 24px;
+}
+
+.clean-sort-a {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4F4F4F;
+    text-decoration: none;
+}

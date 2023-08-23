@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Table</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+</head>
+
+<body>
+    <div class="base-wrapper">
+        <div class="content">
+            <div class="users-base">
+                <div class="users-title">
+                    <h1>Список пользователей</h1>
+                </div>
+                <div class="users-head">
+                    <div class="users-search">
+                        <input type="text" id="search-input" placeholder="Поиск по имени или e-mail">
+                    </div>
+                    <div class="clean-wrap">
+                        <div class="clean-icon">
+                            <img src="img/clean.svg" alt="clean-icon">
+                        </div>
+                        <div class="clean-sort">
+                            <a class="clean-sort-a" href="#" id="clearSortLink">Очистить фильтр</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sortButtons">
+                    <div class="sort-it">
+                        <p class="choose-sort">Сортировка:</p>
+                    </div>
+                    <div class="sort-it sort-before"><a href="#"
+                            style="border: solid 0px;
+                        background: none; font-size: 10px; font-weight: 500; 
+                        line-height: 14px; letter-spacing: 0em; text-align: left; color: #333333; text-decoration: underline dashed #333333; vertical-align: top;"
+                            onclick="submitSort('registration_date')">Дата регистрации</a>
+                    </div>
+                    <div class="sort-it sort-before"><a href="#"
+                            style="border: solid 0px;
+                        background: none; font-size: 10px; font-weight: 500;
+                        line-height: 14px; letter-spacing: 0em; text-align: left; color: #333333; text-decoration: underline dashed #333333; vertical-align: top;"
+                            onclick="submitSort('rating')">Рейтинг</a>
+                    </div>
+                </div>
+                <div class="users-table-wrap">
+                    <table class="users-table" id="user-table">
+                        <thead>
+                            <tr>
+                                <th>Имя пользователя</th>
+                                <th>E-mail</th>
+                                <th onclick="sortTable('registration_date')">Дата регистрации</th>
+                                <th onclick="sortTable('rating')">Рейтинг</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body"></tbody>
+                    </table>
+                </div>
+                <div class="users-pag" id="pagination"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
